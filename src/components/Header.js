@@ -10,8 +10,7 @@ import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from '@material-ui/icons/Forum';
 import NotificationActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
-
+import './Header.css';
 
 
 
@@ -19,7 +18,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const Header = () => {
     return (
         <div className='header'>
-            <div className='header_left'>
+            <div className='header__left'>
                 <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png' alt='facebook logo'></img>
             </div>
             <div className='header__input'>
@@ -50,14 +49,17 @@ const Header = () => {
                 </div>
                 <IconButton>
                     <AddIcon />
-
+                </IconButton>
+                <IconButton>
+                    <ForumIcon />
+                </IconButton>
+                <IconButton>
+                    <NotificationActiveIcon />
+                </IconButton>
+                <IconButton>
+                    <ExpandMoreIcon />
                 </IconButton>
 
-                <ForumIcon />
-
-                <NotificationActiveIcon />
-
-                <ExpandMoreIcon />
             </div>
         </div>
     )
